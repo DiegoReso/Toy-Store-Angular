@@ -1,0 +1,10 @@
+{
+  "products":[
+    {
+      "id": "1",
+      "toyName": "produto de teste",
+      "brandName" : "Estrela",
+      "price" : "100"
+    }
+  ]
+}

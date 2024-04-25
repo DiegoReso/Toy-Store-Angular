@@ -1,5 +1,6 @@
 import { NgFor } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject, Input } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule } from '@angular/material/grid-list'
@@ -13,7 +14,14 @@ import {MatGridListModule } from '@angular/material/grid-list'
 })
 export class ToycardComponent {
 
-@Input() toys!: any[]
+  toys: any[] = []
 
+  httpClient = inject(HttpClient)
 
+  ngOnInit(){
+    this.httpClient.get<any>('api/products').subscribe((toys)=>{
+      this.toys = toys
+    })
+  }
+  
 }
