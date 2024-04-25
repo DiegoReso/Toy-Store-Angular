@@ -1,5 +1,8 @@
+<mat-grid-list cols="4" rowHeight="1:1">
+
   @for (item of toys; track item.id) {
-    <mat-card  class="example-card">
+  <mat-grid-tile>
+    <mat-card class="example-card">
       <mat-card-header>
         <mat-card-title>Shiba Inu</mat-card-title>
         <mat-card-subtitle>Dog Breed</mat-card-subtitle>
@@ -13,5 +16,8 @@
         <button mat-button>SHARE</button>
       </mat-card-actions>
     </mat-card>
+  </mat-grid-tile>
   }
-  
+
+
+</mat-grid-list>
