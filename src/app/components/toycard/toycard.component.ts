@@ -1,5 +1,4 @@
 import { NgFor } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { Component, inject, Input } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
