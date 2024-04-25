@@ -4,6 +4,7 @@ import { Component, inject, Input } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule } from '@angular/material/grid-list'
+import { ToysService } from '../../services/toys.service';
 
 @Component({
   selector: 'app-toycard',
@@ -16,12 +17,11 @@ export class ToycardComponent {
 
   toys: any[] = []
 
-  httpClient = inject(HttpClient)
+  toysService = inject(ToysService)
 
   ngOnInit(){
-    this.httpClient.get<any>('api/products').subscribe((toys)=>{
+    this.toysService.getAll().subscribe((toys)=>{
       this.toys = toys
     })
   }
-  
 }
