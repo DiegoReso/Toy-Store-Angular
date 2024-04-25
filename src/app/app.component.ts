@@ -17,7 +17,12 @@ export class AppComponent {
     { id: 1, toyName: 'Carrinho', toyBrand: 'Hot Wheels' },
     { id: 2, toyName: 'Boneca', toyBrand: 'Barbie' },
     { id: 3, toyName: 'Quebra-cabeça', toyBrand: 'Grow' },
-    { id: 4, toyName: 'Jogo de Tabuleiro', toyBrand: 'Estrela' }
+    { id: 4, toyName: 'Jogo de Tabuleiro', toyBrand: 'Estrela' },
+    { id: 4, toyName: 'Jogo de Tabuleiro', toyBrand: 'Estrela' },
+    { id: 4, toyName: 'Jogo de Tabuleiro', toyBrand: 'Estrela' },
+    { id: 4, toyName: 'Jogo de Tabuleiro', toyBrand: 'Estrela' },
+    { id: 4, toyName: 'Jogo de Tabuleiro', toyBrand: 'Estrela' },
+    { id: 4, toyName: 'Jogo de Tabuleiro', toyBrand: 'Estrela' },
   ];
 
 }
