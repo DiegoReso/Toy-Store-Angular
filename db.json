@@ -2,9 +2,82 @@
   "products":[
     {
       "id": "1",
-      "toyName": "produto de teste",
-      "brandName" : "Estrela",
-      "price" : "100"
+      "toyName": "Carrinho",
+      "brandName": "Hot Wheels",
+      "price": "50"
+    },
+    {
+      "id": "2",
+      "toyName": "Boneca",
+      "brandName": "Barbie",
+      "price": "75"
+    },
+    {
+      "id": "3",
+      "toyName": "Quebra-cabeça",
+      "brandName": "Grow",
+      "price": "30"
+    },
+    {
+      "id": "4",
+      "toyName": "Jogo de Tabuleiro",
+      "brandName": "Estrela",
+      "price": "80"
+    },
+    {
+      "id": "5",
+      "toyName": "Action Figure",
+      "brandName": "Hasbro",
+      "price": "100"
+    },
+    {
+      "id": "6",
+      "toyName": "Pelúcia",
+      "brandName": "Bicho de Pano",
+      "price": "60"
+    },
+    {
+      "id": "7",
+      "toyName": "Lego",
+      "brandName": "Lego",
+      "price": "120"
+    },
+    {
+      "id": "8",
+      "toyName": "Patinete",
+      "brandName": "Xalingo",
+      "price": "150"
+    },
+    {
+      "id": "9",
+      "toyName": "Bicicleta",
+      "brandName": "Caloi",
+      "price": "300"
+    },
+    {
+      "id": "10",
+      "toyName": "Video Game",
+      "brandName": "Nintendo",
+      "price": "1000"
+    },
+    {
+      "id": "11",
+      "toyName": "Video Game",
+      "brandName": "Nintendo",
+      "price": "1000"
+    },
+    {
+      "id": "12",
+      "toyName": "Video Game",
+      "brandName": "Nintendo",
+      "price": "1000"
+    },
+    {
+      "id": "13",
+      "toyName": "Video Game",
+      "brandName": "Nintendo",
+      "price": "1000"
     }
   ]
+  
 }

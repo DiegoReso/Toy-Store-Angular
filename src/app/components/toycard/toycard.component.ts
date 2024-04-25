@@ -1,26 +1,26 @@
-import { NgFor } from '@angular/common';
-import { Component, inject, Input } from '@angular/core';
+
+import { Component,computed,input} from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule } from '@angular/material/grid-list'
-import { ToysService } from '../../services/toys.service';
+
+import { Toy } from '../interfaces/toy.interface';
 
 @Component({
   selector: 'app-toycard',
   standalone: true,
-  imports: [MatCardModule, MatButtonModule,NgFor,MatGridListModule],
+  imports: [MatCardModule, MatButtonModule,MatGridListModule],
   templateUrl: './toycard.component.html',
   styleUrl: './toycard.component.css'
 })
 export class ToycardComponent {
 
-  toys: any[] = []
+  toy = input.required<Toy>()
 
-  toysService = inject(ToysService)
+  toyId = computed(()=> this.toy().id)
+  toyName = computed(()=> this.toy().toyName)
+  toyBrand = computed(()=> this.toy().toyBrand)
+  toyPrice = computed(()=> this.toy().price)
 
-  ngOnInit(){
-    this.toysService.getAll().subscribe((toys)=>{
-      this.toys = toys
-    })
-  }
+
 }
