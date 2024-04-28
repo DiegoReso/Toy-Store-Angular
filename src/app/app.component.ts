@@ -13,6 +13,4 @@ import { HeaderComponent } from './partials/header/header.component';
 export class AppComponent {
   title = 'toy-store';
 
-
-
 }

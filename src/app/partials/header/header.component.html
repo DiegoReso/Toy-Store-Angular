@@ -1,5 +1,7 @@
+
+
 <mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
   <span>RI HAPPY DA DEEP WEB</span>
@@ -11,3 +13,14 @@
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
+
+<mat-drawer-container class="example-container" >
+  <mat-drawer #drawer mode="side">
+    <h1>MENUZADA</h1>
+    <ul>
+      <li><a mat-raised-button [routerLink]="['/create-toy']">Cadastrar Brinquedo</a></li>
+      <li><a mat-raised-button [routerLink]="['/create-toy']">Editar Brinquedo</a></li>
+      <li><a mat-raised-button [routerLink]="['/create-toy']">Excluir Brinquedo</a></li>
+    </ul>
+  </mat-drawer>
+</mat-drawer-container>

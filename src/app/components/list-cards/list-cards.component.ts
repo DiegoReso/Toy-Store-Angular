@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ToysService } from '../../services/toys.service';
 import { ToycardComponent } from '../toycard/toycard.component';
+import { Toy } from '../interfaces/toy.interface';
 
 @Component({
   selector: 'app-list-cards',
@@ -12,7 +13,7 @@ import { ToycardComponent } from '../toycard/toycard.component';
 export class ListCardsComponent {
 
 
-  toys: any[] = []
+  toys: Toy[] = []
 
   toysService = inject(ToysService)
 
@@ -21,5 +22,5 @@ export class ListCardsComponent {
       this.toys = toys
     })
   }
-
 }
+

@@ -1,3 +1,26 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+.example-container {
+  width: 500px;
+  height: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: white;
+}
+
+.example-sidenav-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li{
+  list-style: none;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.example-sidenav {
+  padding: 20px;
+}

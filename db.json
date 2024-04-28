@@ -23,61 +23,8 @@
       "toyName": "Jogo de Tabuleiro",
       "brandName": "Estrela",
       "price": "80"
-    },
-    {
-      "id": "5",
-      "toyName": "Action Figure",
-      "brandName": "Hasbro",
-      "price": "100"
-    },
-    {
-      "id": "6",
-      "toyName": "Pelúcia",
-      "brandName": "Bicho de Pano",
-      "price": "60"
-    },
-    {
-      "id": "7",
-      "toyName": "Lego",
-      "brandName": "Lego",
-      "price": "120"
-    },
-    {
-      "id": "8",
-      "toyName": "Patinete",
-      "brandName": "Xalingo",
-      "price": "150"
-    },
-    {
-      "id": "9",
-      "toyName": "Bicicleta",
-      "brandName": "Caloi",
-      "price": "300"
-    },
-    {
-      "id": "10",
-      "toyName": "Video Game",
-      "brandName": "Nintendo",
-      "price": "1000"
-    },
-    {
-      "id": "11",
-      "toyName": "Video Game",
-      "brandName": "Nintendo",
-      "price": "1000"
-    },
-    {
-      "id": "12",
-      "toyName": "Video Game",
-      "brandName": "Nintendo",
-      "price": "1000"
-    },
-    {
-      "id": "13",
-      "toyName": "Video Game",
-      "brandName": "Nintendo",
-      "price": "1000"
     }
+    
   ]
   
 }
