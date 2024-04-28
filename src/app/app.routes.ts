@@ -10,6 +10,6 @@ export const routes: Routes = [
   },
   {
     path: 'create-toy',
-    component: CreateComponent
+    loadComponent: () => import ('./components/create/create.component').then(m => m.CreateComponent )    
   }
 ];
