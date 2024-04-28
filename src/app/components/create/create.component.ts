@@ -4,7 +4,8 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatInputModule} from '@angular/material/input'
 import { ToysService } from '../../services/toys.service';
-
+import {MatSnackBar} from '@angular/material/snack-bar'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create',
@@ -16,6 +17,10 @@ import { ToysService } from '../../services/toys.service';
 export class CreateComponent {
 
   toyService = inject(ToysService)
+
+  matSnackBar = inject(MatSnackBar)
+
+  router = inject(Router)
 
   form = new FormGroup({
     toyName: new FormControl<string>('',{
@@ -33,12 +38,19 @@ export class CreateComponent {
   })
 
   onSubmit(){
+
+    
     this.toyService.post({
       toyName: this.form.controls.toyName.value,
       toyBrand: this.form.controls.toyBrand.value,
       price: this.form.controls.price.value
     }).subscribe(()=>{
-      alert('Success')
+      this.matSnackBar.open('Brinquedo Cadastrado com sucesso','OK',{
+      duration: 3000,
+      horizontalPosition: 'left',
+      verticalPosition:'bottom'
+    })
+    this.router.navigateByUrl('/').catch(()=> alert("UII"))
     })
     
   }
