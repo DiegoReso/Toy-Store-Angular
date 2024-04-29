@@ -29,5 +29,11 @@ export class ListCardsComponent {
   onEdit(toy: Toy){
     this.router.navigate(['/edit-toy', toy.id])
   }
+
+  onDelete(toy: Toy){
+    this.toysService.delete(toy.id).subscribe(()=>{
+      this.toys = this.toys.filter(t => t.id!== toy.id)
+    })
+  } 
 }
 

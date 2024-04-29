@@ -19,6 +19,7 @@ export class ToycardComponent {
   toy = input.required<Toy>()
 
   @Output() edit = new EventEmitter()
+  @Output() delete = new EventEmitter()
 
   router = inject(Router)
 
@@ -29,6 +30,10 @@ export class ToycardComponent {
 
   onEdit(){
     this.edit.emit()
+  }
+
+  onDelete(){
+    this.delete.emit()
   }
 
 }
