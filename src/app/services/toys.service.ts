@@ -13,9 +13,17 @@ export class ToysService {
     getAll(){
       return this.httpClient.get<Toy[]>('/api/products')
     }
+    get(id:string){
+      return this.httpClient.get<Toy>(`/api/products/${id}`)
+    }
 
     post(payload: ToyPayload){
       return this.httpClient.post('/api/products', payload)
     }
+
+    put(id: string, payload: ToyPayload){
+      return this.httpClient.put(`/api/products/${id}`, payload)
+    }
+
   }
 

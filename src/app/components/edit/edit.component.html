@@ -1,0 +1,22 @@
+
+<form  [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input type="text" matInput  formControlName="toyName" placeholder="Nome Brinquedo" >
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Marca</mat-label>
+    <input type="text" matInput  formControlName="toyBrand" placeholder="Marca Brinquedo"  >
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Preco</mat-label>
+    <input type="string" matInput  formControlName="price" placeholder="Preco Brinquedo">
+  </mat-form-field>
+
+    <div>
+      <button type="submit" mat-raised-button>Salvar</button>
+    </div>
+    
+
+</form>

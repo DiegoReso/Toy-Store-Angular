@@ -4,11 +4,10 @@
 
       
         @for (toy of toys; track toy.id) {
-        <app-toycard [toy]="toy"></app-toycard>
+        <app-toycard [toy]="toy" (edit)="onEdit(toy)"></app-toycard>
       }
       
       
-
   </div>
 
 </div>
